@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Index</title>
+</head>
+<body>
+  <div class="grid-container">
+    <aside classs="sidebar">
+      <div class="sidebar-header">
+        <img src="" class="logo" alt="" />
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <ul class="links">
+        <li>
+          <a href="#">informes</a>
+        </li>
+        <li>
+          <a href="#">modificar proceso</a>
+        </li>
+        <li>
+          <a href="#">eliminar proceso</a>
+        </li>
+        <li>
+          <a href="#">agregar etapa</a>
+        </li>
+        <li>
+          <a href="#">eliminar etapa</a>
+        </li>
+      </ul>
+    </aside>
+    <div class="header">
+      <h1>main page</h1>
+        <div class="container">
+        <button id="create-process-btn" class="btn">+ Create Process</button>
+        <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button id="submit-search-btn" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Open Processes table -->
+    <section class="open-processes">
+      <div class="summary-table-open">
+        <h3>open processes</h3>
+        <table>
+          <tr>
+            <th>process name</th>
+            <th>actual stage</th>
+            <th>due date</th>
+            <th>responsible</th>
+          </tr>
+          <tr>
+            <td>process 1</td>
+            <td>firmas</td>
+            <td>03/06/2020</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td>process 2</td>
+            <td>polizas</td>
+            <td>01/02/2020</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td>process 3</td>
+            <td>negociación</td>
+            <td>02/05/2020</td>
+            <td>xxxx</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    
+    <!-- Closed Processes table-->
+    <section class="closed-processes">
+      <div class="summary-table-close">
+        <h3>closed processes</h3>
+        <table>
+          <tr>
+            <th>process name</th>
+            <th>actual stage</th>
+            <th>due date</th>
+            <th>responsible</th>
+          </tr>
+          <tr>
+            <td>process 1</td>
+            <td>firmas</td>
+            <td>03/06/2020</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td>process 2</td>
+            <td>polizas</td>
+            <td>01/02/2020</td>
+            <td>xxxx</td>
+          </tr>
+          <tr>
+            <td>process 3</td>
+            <td>negociación</td>
+            <td>02/05/2020</td>
+            <td>xxxx</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
