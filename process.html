@@ -40,6 +40,32 @@
         <h4 id="created-by">created by</h4>
       </div>
     </div>
+    <!-- Form -->
+    <div id="new-stage" class="wrapper">
+      <form class="add-new-stage" action="">
+        <button id="template-btn" class="btn">+ template</button>
+        <button id="close-form-btn" class="close-btn"><i class="fas fa-times"></i></button>
+          <div class="form-header">
+            <input type="text" name="stage" id="stage-name" placeholder="Stage name">
+            <input type="text" name="responsible" id="responsible" placeholder="Responsible">
+          </div>
+          <fieldset class="np-stages">
+            <div class="form-grid-container">
+              <input type="date" class="new-stage-input" placeholder="Starting date">
+            </div>
+            <div class="form-grid-container">
+              <input type="date" class="new-stage-input" placeholder="Due date">
+            </div>
+            <div class="form-grid-container">
+              <!-- logo de estado (semaforo) -->
+              <input type="text" class="new-stage-input" placeholder="semaforo">
+            </div>
+            <div class="textarea-container">
+              <textarea class="text-box" placeholder="mensaje...." tabindex="5"></textarea>
+            </div>
+          </fieldset>
+      </form>
+    </div>
     <section>
       <div class="time-line">
         <h2>a timeline graph..</h2>
@@ -79,5 +105,6 @@
    
     
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@
     <div class="header">
       <h1>main page</h1>
         <div class="container">
-        <button id="create-process-btn" class="btn">+ Create Process</button>
+        <button id="create-process-btn" class="btn">+ create process</button>
         <div class="search-container">
           <form action="">
             <input type="text" placeholder="Search.." name="search">
@@ -42,6 +42,35 @@
           </form>
         </div>
       </div>
+    </div>
+    <!-- Form -->
+    <div class="wrapper new-process">
+      <form class="add-new-process" action="">
+        <button id="template-btn" class="btn">+ template</button>
+        <button id="close-form-btn" class="close-btn"><i class="fas fa-times"></i></button>
+          <div class="form-header">
+            <input type="text" name="name" id="process-name" placeholder="Process name">
+            <input type="search" name="" id="" placeholder="invite participants">
+          </div>
+          <fieldset class="np-stages">
+            <div class="form-grid-container">
+              <input type="text" class="new-stage-input" placeholder="Stage 1">
+              <input type="text" class="new-stage-input" placeholder="Stage 2">
+              <input type="text" class="new-stage-input" placeholder="Stage 3">
+              <input type="button" class="btn" value="+ add stage">
+            </div>
+            <div class="form-grid-container">
+              <input type="text" class="new-stage-input" placeholder="Responsible">
+              <input type="text" class="new-stage-input" placeholder="Responsible">
+              <input type="text" class="new-stage-input" placeholder="Responsible">
+            </div>
+            <div class="form-grid-container">
+              <input type="date" class="new-stage-input" placeholder="Due date">
+              <input type="date" class="new-stage-input" placeholder="Due date">
+              <input type="date" class="new-stage-input" placeholder="Due date">
+            </div>
+          </fieldset>
+      </form>
     </div>
     <!-- Open Processes table -->
     <section class="open-processes">
@@ -109,5 +138,6 @@
       </div>
     </section>
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
