@@ -155,7 +155,7 @@ th {
 	top: 150px;
 	left: 300px;
 	background-color: rgba(75, 74, 74, 1);
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 
 .show {

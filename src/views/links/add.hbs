@@ -1,0 +1,26 @@
+
+<div class="container">
+  <form action="/links/add" method="POST">
+      <div class="form-row m-3">
+        <div class="col">
+          <input type="text" class="form-control" name="title" placeholder="Process Name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" name="creator" placeholder="User">
+        </div>
+      </div>
+
+      <div class="form-row m-3">
+        <div class="col">
+          <textarea class="form-control" aria-label="With textarea" name="description" placeholder="Description"></textarea>
+        </div>
+      </div>
+      <div class="form-row m-5">
+        <div class="col">
+          <button type="submit" class="btn btn-success w-25 m-auto d-flex justify-content-center">
+            Save
+          </button>
+        </div>
+      </div>
+  </form>
+</div>
