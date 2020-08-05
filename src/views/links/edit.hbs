@@ -1,19 +1,19 @@
 
 <div class="container">
   <h2 class="m-4 text-uppercase">create process</h2>
-  <form action="/links/add" method="POST">
+  <form action="/links/edit/{{process.id}}" method="POST">
       <div class="form-row m-3">
         <div class="col">
-          <input type="text" class="form-control" name="title" placeholder="Process Name">
+          <input type="text" value="{{process.title}}" class="form-control" name="title" placeholder="Process Name">
         </div>
         <div class="col">
-          <input type="text" class="form-control" name="creator" placeholder="User">
+          <input type="text" value="{{process.creator}}" class="form-control" name="creator" placeholder="User">
         </div>
       </div>
 
       <div class="form-row m-3">
         <div class="col">
-          <textarea class="form-control" aria-label="With textarea" name="description" placeholder="Description"></textarea>
+          <textarea class="form-control" aria-label="With textarea" name="description" placeholder="Description">{{process.description}}</textarea>
         </div>
       </div>
       <div class="form-row m-5">

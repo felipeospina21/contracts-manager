@@ -36,6 +36,7 @@ ALTER TABLE process
 ALTER TABLE process  
     MODIFY id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 1;
 
+
 -- Stages Table
 CREATE TABLE stages
 (

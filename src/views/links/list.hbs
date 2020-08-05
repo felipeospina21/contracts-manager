@@ -1,5 +1,6 @@
-<div class="container">
-	<div class="row m-3">
+<div class="container d-inline">
+	
+		<h2 class="m-4 text-uppercase">open processes</h2>
 		<table class="table">
 			<thead>
 				<tr>
@@ -14,9 +15,18 @@
 						<td>{{title}}</td>
 						<td>{{creator}}</td>
 						<td>{{description}}</td>
+						<td>
+							<a class="btn btn-danger" href="/links/delete/{{id}}">Delete</a>
+							<a class="btn btn-dark" href="/links/edit/{{id}}">Edit</a>
+						</td>
+					</tr>
+				{{else}}
+					<tr>
+						<td colspan="2">No process created yet</td>
+						<td><a href="/links/add" class="btn btn-success">add one</a></td>
 					</tr>
 				{{/each}}
 			</tbody>
 		</table>
-	</div>
+	
 </div>
